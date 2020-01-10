@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Memory Game</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="container">
+		<div id="intro">
+			<h1> Memory Game</h1>
+		</div>
+		<div id="game">
+			<div id="settings">
+				<p>Choose number of tiles: <span>4</span></p>
+				<input type="range" value=4 min="4" max="24" step="2">
+				<button name="reset">Reset</button>
+				<button name="start">Play</button>
+				
+			</div>
+			
+			<div id="play-area"></div>
+			
+		</div>
+		<button id="restartbtn">Restart Game</button>
+	</div>
+
+	<script src="memory_game.js"></script>
+</body>
+
+</html>

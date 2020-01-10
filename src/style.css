@@ -1,0 +1,172 @@
+
+body {
+	margin: 0;
+	transition: .6s;
+	width: 800px;
+	font-family: tahoma;
+	padding: 0;
+	background: white;
+	margin: 30px auto;
+	
+	
+}
+
+#winScreen {
+	width: 122vh;
+	height: 80vw;
+	position: absolute;
+	top: 0;
+	transition: background .4s;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#winScreen p {
+	color: white;
+	font-size: 60px;
+	transform: translateY(-70vh);
+	user-select: none;
+	text-shadow: 2px 2px 0 black;
+	animation: textDrop 10s;
+}
+
+#intro, #game {
+	width: 95%;
+	text-align: center;
+	margin: 10px auto 0 auto;
+	border: 1px solid black;
+	border-radius: 20px;
+	background: linear-gradient(rgba(70%, 70%, 70%, .2), rgba(70%, 70%, 70%, .3));
+	box-shadow: 2px 2px 1px gray;
+
+}
+
+#intro span {
+	color: brown;
+	text-shadow:
+		1px 1px black,
+		1px -1px black,
+		-1px 1px black,
+		-1px -1px black;
+}
+
+#game {
+	min-height: 450px;
+	margin-bottom: 10px;
+}
+
+#settings {
+	font-size: 22px;
+	background: rgba(0, 0, 0, .2);
+	width: 300px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#settings button {
+	width: 60px;
+	height: 26px;
+	cursor: pointer;
+	border-radius: 20px;
+	color: black;
+	font-weight: bold;
+	border: none;
+}
+#settings button:hover{
+	background-color: #b9f0d9;
+    color: white;
+}
+
+#restartbtn{
+	margin-left: 45%;
+    margin-right: 30%;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+	font-size: 16px;
+	border-radius: 20px;
+	transition: 0.3s;
+	font-weight: bold;
+}
+#restartbtn:hover{
+	background-color: #b9f0d9;
+    color: white;
+}
+
+#play-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.tile {
+
+	border-radius: 5px;
+    width: 23%;
+    height: 150px;
+    background-color:#79dbbf;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+	transition: background-color .1s ease-in-out;
+	font-size: 100px;
+	opacity: 5;
+	
+}
+.tile:hover{
+	background-color: #b9f0d9;
+	transition: background-color .1s ease-in-out;
+}
+
+.tile p {
+	opacity: 5;
+	font-size: 30px;
+	margin: 0;
+	padding: 35%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	filter: blur(20px); 
+	user-select: none;
+	font-weight: bold;
+	font-size: 75px;
+	color: #fff; 
+	
+	
+}
+
+
+
+.matched {
+	border-radius: 50%;
+	transition: 1s;
+	background: white;
+}
+
+.matched p {
+	color:#79dbbf ;
+
+	
+	
+}
+
+
+@keyframes textDrop {
+	0% {
+		transform: translateY(-70vh);
+	}
+	10% {
+		transform: translateY(-12vh);
+	}
+	90% {
+		transform: translateY(12vh);
+	}
+	100% {
+		transform: translateY(110vh);
+	}
+}
